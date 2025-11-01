@@ -1,0 +1,141 @@
+======================================================================
+PHISHING EMAIL ANALYSIS REPORT
+======================================================================
+
+Email File: samples/phishing_sample_1.eml
+Analysis Date: 2025-01-20 15:30:00
+Risk Score: 24/30
+Risk Level: 🔴 CRITICAL - Highly likely phishing
+
+======================================================================
+
+INDICATORS FOUND:
+----------------------------------------------------------------------
+1. ⚠️  Domain contains numbers (possible typosquatting)
+2. ⚠️  Display name mentions 'paypal' but email domain doesn't match
+3. ⚠️  SPF authentication FAILED
+4. ⚠️  DKIM authentication FAILED
+5. ⚠️  DMARC authentication FAILED
+6. ⚠️  Email routed through suspicious domain (.ru)
+7. ⚠️  Non-HTTPS URL: http://paypa1-verify.com/logo.png
+8. ⚠️  Possible typosquatting: http://paypa1-verify.com (similar to paypal.com)
+9. ⚠️  Urgent/threatening language detected: urgent, immediate action, within 24 hours
+10. ⚠️  Generic greeting (no personalization)
+11. ⚠️  Contains threats: account will be suspended
+
+======================================================================
+DETAILED ANALYSIS
+======================================================================
+
+1. SENDER ANALYSIS
+----------------------------------------------------------------------
+From: "PayPal Security Team" <security-alert@paypa1-verify.com>
+
+RED FLAGS:
+- Display name says "PayPal" but email domain is "paypa1-verify.com" (note the "1" instead of "l")
+- Domain uses number substitution - classic typosquatting technique
+- Real PayPal emails come from @paypal.com domain
+- "verify" keyword in domain name is suspicious
+
+2. HEADER ANALYSIS
+----------------------------------------------------------------------
+Authentication Results:
+  - SPF: FAIL ❌
+  - DKIM: FAIL ❌
+  - DMARC: FAIL ❌
+
+Received Headers:
+- Email originated from: mail.suspicious-server.ru (185.220.101.45)
+- Routed through Russian servers (.ru domain)
+- PayPal does not send emails from Russian servers
+
+3. LINK ANALYSIS
+----------------------------------------------------------------------
+Found malicious URL:
+  http://paypa1-verify.com/secure-login?session=ab12cd34ef56
+
+RED FLAGS:
+- Uses HTTP instead of HTTPS for "secure" login
+- Domain "paypa1-verify.com" mimics "paypal.com"
+- Number "1" substituted for letter "l" (typosquatting)
+- Real PayPal uses: https://www.paypal.com
+
+4. CONTENT ANALYSIS
+----------------------------------------------------------------------
+Subject: URGENT: Unusual Activity Detected on Your Account
+
+Content Red Flags:
+- Creates sense of urgency ("IMMEDIATE ACTION REQUIRED!")
+- Threatens account suspension ("temporarily limited your account")
+- Generic greeting ("Dear Valued Customer" - no personalization)
+- 24-hour deadline to pressure quick action
+- Claims suspicious activity from Moscow, Russia
+- Professional-looking HTML to appear legitimate
+
+5. SOCIAL ENGINEERING TACTICS
+----------------------------------------------------------------------
+- Fear: Claims unusual activity and account compromise
+- Urgency: "24 hours" deadline
+- Authority: Impersonates PayPal Security Team
+- Scarcity: "permanent suspension" threat
+
+======================================================================
+VERDICT: PHISHING EMAIL
+======================================================================
+
+This is a CLASSIC PHISHING ATTACK with multiple red flags:
+
+✗ Spoofed sender address (typosquatting)
+✗ Failed email authentication (SPF/DKIM/DMARC)
+✗ Suspicious origin (Russian servers)
+✗ Malicious links (typosquatted domain)
+✗ Urgent/threatening language
+✗ Generic greeting (no personalization)
+
+======================================================================
+RECOMMENDATIONS
+======================================================================
+
+❌ DO NOT:
+  - Click the "Verify Your Account" button or any links
+  - Enter any personal information
+  - Reply to this email
+  - Download any attachments
+
+✅ DO:
+  - Delete this email immediately
+  - Report to abuse@paypal.com
+  - Log into PayPal directly through browser (type paypal.com)
+  - Check account through official PayPal app
+  - Enable two-factor authentication on your account
+  - Report to your email provider as phishing
+
+======================================================================
+ATTACKER OBJECTIVE
+======================================================================
+
+This phishing email attempts to:
+1. Steal PayPal login credentials
+2. Steal credit card/financial information
+3. Install malware if user visits malicious site
+4. Conduct identity theft
+
+The fake website likely:
+- Mimics PayPal login page
+- Captures username and password
+- May ask for additional information (SSN, DOB, etc.)
+- Could install malware or keyloggers
+
+======================================================================
+EDUCATIONAL VALUE
+======================================================================
+
+This example demonstrates:
+- Typosquatting attacks (paypa1 vs paypal)
+- Email authentication failures
+- Social engineering through fear and urgency
+- Professional-looking phishing emails
+- Importance of verifying sender authenticity
+- Why you should never click links in suspicious emails
+
+======================================================================
