@@ -1,0 +1,51 @@
+Return-Path: <noreply@microsoft-security.online>
+Delivered-To: employee@company.com
+Received: from mail-relay-tokyo.jp (unknown [103.224.182.245])
+	by mx.company.com with SMTP id abc789xyz123
+	for <employee@company.com>;
+	Thu, 16 Jan 2025 08:15:22 +0000
+Received-SPF: none (company.com: no SPF record found) client-ip=103.224.182.245;
+Authentication-Results: mx.company.com;
+       dkim=none;
+       spf=none;
+       dmarc=none
+From: "Microsoft 365 Admin" <noreply@microsoft-security.online>
+To: employee@company.com
+Subject: Your Microsoft 365 password will expire today
+Date: Thu, 16 Jan 2025 08:15:00 +0000
+Message-ID: <xyz789abc123@microsoft-security.online>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Dear User,
+
+Your Microsoft 365 password is expiring today. To avoid loosing access to your email and documents, you must reset your password immediatly.
+
+PASSWORD EXPIRATION NOTICE
+==========================
+User: employee@company.com
+Current Password Expires: January 16, 2025 at 11:59 PM
+Action Required: Reset Password
+
+CLICK HERE TO RESET YOUR PASSWORD:
+https://bit.ly/3xK9mP2
+
+If you do not reset your password within the next 3 hours, your account will be deactivated and you will loose access to:
+- Email
+- OneDrive files
+- Teams meetings
+- All Office 365 applications
+
+Please note: This is an automated security notification. You must complete this action yourself.
+
+For security reasons, do not share this link with anyone.
+
+Best Regards,
+Microsoft 365 Security Team
+IT Support Services
+
+---
+This email was sent to: employee@company.com
+If you did not request this, please ignore this message.
+
+Microsoft Corporation | One Microsoft Way | Redmond, WA 98052

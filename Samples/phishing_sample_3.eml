@@ -1,0 +1,84 @@
+Return-Path: <billing@amaz0n-payments.com>
+Delivered-To: customer@email.com
+Received: from smtp.mailserver-cheap.xyz (smtp.mailserver-cheap.xyz [45.142.120.10])
+	by mx.email.com with ESMTP id def456ghi789
+	for <customer@email.com>;
+	Fri, 17 Jan 2025 14:22:10 +0000
+Received-SPF: softfail (email.com: domain of billing@amaz0n-payments.com transitioning) client-ip=45.142.120.10;
+Authentication-Results: mx.email.com;
+       dkim=fail (bad signature);
+       spf=softfail;
+       dmarc=fail
+From: "Amazon Payment Services" <billing@amaz0n-payments.com>
+Reply-To: support-urgent@amaz0n-payments.com
+To: customer@email.com
+Subject: Your Amazon Order #402-8234729-9283746 - Payment Failed
+Date: Fri, 17 Jan 2025 14:22:00 +0000
+Message-ID: <payment-failed-12345@amaz0n-payments.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_12345_67890"
+
+------=_Part_12345_67890
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif;">
+<div style="max-width: 650px; margin: 0 auto; border: 1px solid #ddd; padding: 20px;">
+
+    <div style="background-color: #232f3e; padding: 15px;">
+        <h1 style="color: #ff9900; margin: 0;">amazon.com</h1>
+    </div>
+
+    <div style="padding: 20px;">
+        <h2 style="color: #c7511f;">Payment Declined - Action Required</h2>
+
+        <p>Hello,</p>
+
+        <p>We were unable to process your payment for the following order:</p>
+
+        <div style="background-color: #f3f3f3; padding: 15px; margin: 20px 0;">
+            <strong>Order Number:</strong> 402-8234729-9283746<br>
+            <strong>Item:</strong> Apple MacBook Pro 16" M3 Max<br>
+            <strong>Total:</strong> $3,499.99<br>
+            <strong>Payment Method:</strong> Visa ending in 1234
+        </div>
+
+        <p style="color: #c7511f;"><strong>Your payment method was declined.</strong></p>
+
+        <p>To complete your order and avoid cancellation, please update your payment information within 24 hours:</p>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="http://amaz0n-payments.com/update-payment?order=402-8234729-9283746&token=xyz123abc"
+               style="background-color: #ff9900; color: #000; padding: 12px 40px; text-decoration: none; border-radius: 3px; font-weight: bold; display: inline-block;">
+                Update Payment Method
+            </a>
+        </div>
+
+        <p style="font-size: 12px; color: #555;">
+            <strong>Important:</strong> If we don't receive payment within 24 hours, your order will be cancelled
+            and the item may no longer be available at this price.
+        </p>
+
+        <p>Thank you for shopping with Amazon!</p>
+
+        <p style="font-size: 11px; color: #888; margin-top: 30px;">
+            This message was sent from a notification-only email address. Please do not reply to this message.
+        </p>
+
+        <p style="font-size: 10px; color: #888;">
+            Amazon.com, Inc., 410 Terry Avenue North, Seattle, WA 98109-5210
+        </p>
+    </div>
+</div>
+</body>
+</html>
+
+------=_Part_12345_67890
+Content-Type: application/pdf; name="Invoice-402-8234729-9283746.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice-402-8234729-9283746.pdf"
+
+JVBERi0xLjQKJeLjz9MKMyAwIG9iago8PC9UeXBlL1BhZ2UvUGFyZW50IDIgMCBSL01lZGlhQm94WzAgMCA1OTUgODQyXS9SZXNvdXJjZXM8PC9Gb250PDwvRjEgNCAwIFI+Pj4+L0NvbnRlbnRzIDUgMCBSPj4KZW5kb2JqCg==
+
+------=_Part_12345_67890--
